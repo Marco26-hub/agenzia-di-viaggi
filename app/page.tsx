@@ -157,13 +157,15 @@ export default function Home() {
 
       <section className="section intro">
         <div>
-          <p className="eyebrow">Strategia</p>
-          <h2>Partire snelli, vendere bene, integrare dopo.</h2>
+          <p className="eyebrow">Agenzia viaggi luxury online</p>
+          <h2>Viaggi su misura che iniziano dall&apos;ascolto.</h2>
         </div>
         <p>
-          La prima versione punta a convertire richieste reali: form chiaro,
-          offerte curate, canali di contatto e posizionamento premium. Le API
-          complesse arrivano quando sappiamo quali prodotti generano margine.
+          Aurum Travel e&apos; un&apos;agenzia viaggi luxury online italiana per
+          itinerari su misura, lune di miele, safari privati, yacht, ville e
+          retreat in montagna. Dalla Costiera Amalfitana alle Maldive, ogni
+          proposta unisce consulenza personale, partner selezionati e
+          assistenza dedicata prima, durante e dopo il viaggio.
         </p>
       </section>
 

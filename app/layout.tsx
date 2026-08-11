@@ -13,21 +13,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aurum Travel | Agenzia viaggi online luxury",
+  title: "Aurum Travel | Agenzia Viaggi Luxury su Misura",
   description:
-    "Agenzia viaggi online per itinerari su misura, luxury concierge, pacchetti selezionati e collegamenti con portali travel.",
+    "Agenzia viaggi luxury online italiana per viaggi su misura, lune di miele, safari, yacht, ville private e retreat in montagna.",
   metadataBase: new URL("https://aurum-travel-online.beige-fawn-1352.chatgpt.site"),
   openGraph: {
-    title: "Aurum Travel | Private journeys, impeccably personal",
-    description: "Viaggi su misura e luxury concierge per chi vuole vivere il mondo in modo personale.",
+    title: "Aurum Travel | Agenzia Viaggi Luxury su Misura",
+    description: "Viaggi su misura, yacht, ville private, safari e retreat di montagna con luxury concierge.",
     images: ["/og.png"],
     locale: "it_IT",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aurum Travel | Private journeys, impeccably personal",
-    description: "Viaggi su misura e luxury concierge.",
+    title: "Aurum Travel | Agenzia Viaggi Luxury su Misura",
+    description: "Viaggi su misura, yacht, ville private, safari e retreat di montagna.",
     images: ["/og.png"],
   },
   icons: {
