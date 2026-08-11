@@ -57,8 +57,8 @@ main {
   min-height: min(920px, 100svh);
   color: #fff;
   background:
-    linear-gradient(90deg, rgba(12, 18, 18, 0.8), rgba(12, 18, 18, 0.24)),
-    url("https://www.labellavitamalficharter.com/wp-content/uploads/2024/04/LaBellavita-Charter-Boats-Rentals-AmalfiCoast_Capri_Positano_Boat_DJI_0483.jpg")
+    linear-gradient(90deg, rgba(8, 13, 17, 0.82), rgba(8, 13, 17, 0.28) 62%, rgba(8, 13, 17, 0.12)),
+    url("/private-lodge-hero.png")
       center / cover;
 }
 
@@ -229,7 +229,8 @@ h3 {
 
 .searchPanel {
   padding: 26px;
-  backdrop-filter: blur(12px);
+  background: rgba(246, 242, 234, 0.9);
+  backdrop-filter: blur(18px);
 }
 
 .panelHeader {
