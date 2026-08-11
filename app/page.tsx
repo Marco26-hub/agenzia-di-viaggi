@@ -3,7 +3,7 @@ const destinations = [
     title: "Costiera Amalfitana privata",
     tag: "Luxury Italia",
     image:
-      "https://www.travoh.com/wp-content/uploads/2023/10/011-Palazzo-Avino-Amalfi-Coast-Hotel-Ravello-Italy-Terrace-Ocean-View.jpg",
+      "https://perasail.com/_next/image?q=75&url=https%3A%2F%2Fminio.perasail.com%2Fperasail-storage%2Fblog%2F8436d7d3-a45a-40b9-a244-202c10b2172a.jpg&w=3840",
     details: "Hotel 5 stelle, yacht day, chef table, transfer privati",
     price: "da 4.900 euro",
   },
@@ -11,7 +11,7 @@ const destinations = [
     title: "Maldives overwater retreat",
     tag: "Honeymoon",
     image:
-      "https://ozen-by-atmosphere.themaldiveshotels.com/data/Pics/OriginalPhoto/15365/1536598/1536598993/ozen-by-atmosphere-hotel-maadhoo-kaafu-atoll-pic-1.JPEG",
+      "https://travelsort.com/wp-content/uploads/2017/11/travelsort-2883.jpeg",
     details: "Villa sull'acqua, spa, seaplane, dining personalizzato",
     price: "da 7.800 euro",
   },
@@ -19,7 +19,7 @@ const destinations = [
     title: "Safari lodge experience",
     tag: "Signature",
     image:
-      "https://www.mybotswanastay.com/storage/753924/conversions/kings-camp-lodge-an-immersive-luxury-safari-experience-in-south-africas-timbavati-reserve-full.webp",
+      "https://south-africa.net/uploads/luxury-retreats-in-south-africa-1-1024x558.jpg",
     details: "Game drive, lodge boutique, guida privata, estensione mare",
     price: "da 8.600 euro",
   },
