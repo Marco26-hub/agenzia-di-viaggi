@@ -2,8 +2,7 @@ const destinations = [
   {
     title: "Costiera Amalfitana privata",
     tag: "Luxury Italia",
-    image:
-      "https://www.labellavitamalficharter.com/wp-content/uploads/2024/04/LaBellavita-Charter-Boats-Rentals-AmalfiCoast_Capri_Positano_Boat_DJI_0483.jpg",
+    image: "/amalfi-private-yacht.png",
     details: "Hotel 5 stelle, yacht day, chef table, transfer privati",
     price: "da 4.900 euro",
   },
