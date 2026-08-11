@@ -43,6 +43,25 @@ const luxuryServices = [
   "Profilo cliente e preferenze",
 ];
 
+const privateCollections = [
+  {
+    number: "01",
+    label: "Mare Privato",
+    title: "Orizzonti che appartengono solo a voi.",
+    copy: "Yacht con equipaggio, ville con accesso al mare, isole riservate e tavoli che non si prenotano: ogni giorno segue il vostro ritmo, non un programma preconfezionato.",
+    details: ["Yacht e tender privato", "Ville sul mare e island buyout", "Chef, sommelier e beach club access"],
+    image: "https://bestchoiceyachting.com/search-images/optimized/luxury-motor-yacht-charter-sunset-stern-2.jpg",
+  },
+  {
+    number: "02",
+    label: "Alta Quota",
+    title: "La montagna, quando il silenzio vale di piu' del rumore.",
+    copy: "Chalet contemporanei, piste raggiunte prima degli altri, guide private e spa con vista sulle Dolomiti. L'alta quota diventa il vostro spazio personale.",
+    details: ["Chalet con staff dedicato", "Ski concierge e heli transfer", "Wellness, cucina privata, accessi speciali"],
+    image: "https://static.wixstatic.com/media/90be2d_ef864e56ba284b40823b3f10323ad8c3~mv2.jpg/v1/fill/w_2458%2Ch_1638%2Cal_c%2Cq_90/mountain-chalet-pool-family-south-tyrol.jpg",
+  },
+];
+
 export default function Home() {
   return (
     <main>
@@ -176,21 +195,41 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="luxuryBand" id="luxury">
-        <div>
-          <p className="eyebrow">Private travel</p>
-          <h2>Divisione luxury separata dal catalogo standard.</h2>
+      <section className="luxuryDivision" id="luxury">
+        <div className="luxuryIntro">
+          <div>
+            <p className="eyebrow">Aurum private travel</p>
+            <h2>Due mondi. Un unico standard senza compromessi.</h2>
+          </div>
           <p>
-            Per clienti alto spendenti il sito deve trasmettere accesso, cura e
-            discrezione: call conoscitiva, profilo preferenze, partner hotel,
-            benefit, assistenza durante il viaggio e itinerari firmati.
+            Una divisione dedicata a chi non cerca semplicemente una
+            destinazione, ma accesso, tempo e discrezione. La costruiamo
+            ascoltando prima di proporre.
           </p>
         </div>
-        <ul>
-          {luxuryServices.map((service) => (
-            <li key={service}>{service}</li>
+
+        <div className="collectionGrid">
+          {privateCollections.map((collection) => (
+            <article className="collectionCard" key={collection.label}>
+              <img src={collection.image} alt={collection.label} />
+              <div className="collectionCopy">
+                <span>{collection.number} / {collection.label}</span>
+                <h3>{collection.title}</h3>
+                <p>{collection.copy}</p>
+                <ul>
+                  {collection.details.map((detail) => <li key={detail}>{detail}</li>)}
+                </ul>
+              </div>
+            </article>
           ))}
-        </ul>
+        </div>
+
+        <div className="serviceSignature">
+          <p>La firma Aurum</p>
+          <ul>
+            {luxuryServices.map((service) => <li key={service}>{service}</li>)}
+          </ul>
+        </div>
       </section>
 
       <section className="section system" id="sistema">
