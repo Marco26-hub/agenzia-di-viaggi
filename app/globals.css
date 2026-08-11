@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f7f3ec;
-  --foreground: #171614;
-  --ink: #171614;
-  --muted: #6e675f;
-  --line: #ded5c8;
-  --paper: #fffaf2;
-  --ivory: #f9f0e2;
-  --olive: #51624a;
-  --teal: #0e6f78;
-  --wine: #873f45;
-  --gold: #b88943;
+  --background: #f4f1eb;
+  --foreground: #181817;
+  --ink: #181817;
+  --muted: #686862;
+  --line: #d7d4cc;
+  --paper: #fbfaf6;
+  --ivory: #e9e3d8;
+  --olive: #3c5149;
+  --teal: #214c4b;
+  --wine: #8a3d3d;
+  --gold: #c7a064;
 }
 
 @theme inline {
@@ -33,7 +33,7 @@ body {
   margin: 0;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -54,11 +54,11 @@ main {
 }
 
 .hero {
-  min-height: 92vh;
+  min-height: min(920px, 100svh);
   color: #fff;
   background:
-    linear-gradient(90deg, rgba(18, 20, 18, 0.84), rgba(18, 20, 18, 0.42)),
-    url("https://perasail.com/_next/image?q=85&url=https%3A%2F%2Fminio.perasail.com%2Fperasail-storage%2Fblog%2F8436d7d3-a45a-40b9-a244-202c10b2172a.jpg&w=3840")
+    linear-gradient(90deg, rgba(12, 18, 18, 0.8), rgba(12, 18, 18, 0.24)),
+    url("https://www.labellavitamalficharter.com/wp-content/uploads/2024/04/LaBellavita-Charter-Boats-Rentals-AmalfiCoast_Capri_Positano_Boat_DJI_0483.jpg")
       center / cover;
 }
 
@@ -69,12 +69,13 @@ main {
   gap: 24px;
   width: min(1180px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 24px 0;
+  padding: 28px 0;
 }
 
 .brand {
-  font-size: 22px;
-  font-weight: 700;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 27px;
+  font-weight: 400;
   letter-spacing: 0;
 }
 
@@ -86,7 +87,10 @@ main {
   display: flex;
   align-items: center;
   gap: 20px;
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .navCta,
@@ -103,17 +107,17 @@ button {
 
 .navCta {
   padding: 0 16px;
-  background: #fff;
+  background: #f8f5ef;
   color: var(--ink);
 }
 
 .heroGrid {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) 420px;
+  grid-template-columns: minmax(0, 1.2fr) 385px;
   gap: 48px;
   width: min(1180px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 70px 0 96px;
+  padding: 96px 0 76px;
 }
 
 .heroCopy {
@@ -138,14 +142,18 @@ p {
 
 h1 {
   margin-bottom: 20px;
-  font-size: clamp(56px, 10vw, 116px);
-  line-height: 0.88;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(66px, 10vw, 132px);
+  font-weight: 400;
+  line-height: 0.82;
   letter-spacing: 0;
 }
 
 h2 {
   margin-bottom: 18px;
-  font-size: clamp(34px, 5vw, 58px);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(36px, 5vw, 62px);
+  font-weight: 400;
   line-height: 0.98;
   letter-spacing: 0;
 }
@@ -160,7 +168,7 @@ h3 {
 .lead {
   max-width: 640px;
   color: rgba(255, 255, 255, 0.88);
-  font-size: clamp(18px, 2vw, 23px);
+  font-size: clamp(17px, 2vw, 21px);
   line-height: 1.45;
 }
 
@@ -177,8 +185,8 @@ h3 {
 }
 
 .primaryButton {
-  background: #f3b95f;
-  color: #17120b;
+  background: var(--gold);
+  color: #151412;
 }
 
 .secondaryButton {
@@ -220,7 +228,8 @@ h3 {
 }
 
 .searchPanel {
-  padding: 22px;
+  padding: 26px;
+  backdrop-filter: blur(12px);
 }
 
 .panelHeader {
@@ -285,13 +294,13 @@ button {
 .quoteSection {
   width: min(1180px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 86px 0;
+  padding: 108px 0;
 }
 
 .intro {
   display: grid;
   grid-template-columns: 0.95fr 1fr;
-  gap: 56px;
+  gap: 80px;
   align-items: end;
 }
 
@@ -313,47 +322,109 @@ button {
 .destinationGrid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  gap: 2px;
 }
 
 .destinationCard {
+  position: relative;
+  min-height: 540px;
   overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--paper);
+  border: 0;
+  border-radius: 0;
+  background: #1d2624;
+  color: #fff;
 }
 
 .destinationCard img {
   display: block;
   width: 100%;
-  aspect-ratio: 1.2;
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  aspect-ratio: auto;
   object-fit: cover;
-  filter: saturate(1.04) contrast(1.03);
+  filter: saturate(0.94) contrast(1.04) brightness(0.86);
+  transition: transform 700ms ease, filter 700ms ease;
 }
 
 .destinationCard div {
-  padding: 20px;
+  position: absolute;
+  inset: auto 0 0;
+  z-index: 1;
+  padding: 70px 28px 28px;
+  background: linear-gradient(transparent, rgba(10, 15, 14, 0.88));
+}
+
+.destinationCard:hover img {
+  filter: saturate(1.05) contrast(1.04) brightness(0.94);
+  transform: scale(1.045);
 }
 
 .destinationCard span {
   display: block;
   margin-bottom: 10px;
-  color: var(--wine);
+  color: #e9c78d;
   font-size: 12px;
   font-weight: 800;
   text-transform: uppercase;
 }
 
 .destinationCard strong {
-  color: var(--olive);
+  color: #fff;
+}
+
+.destinationCard p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.manifesto {
+  position: relative;
+  min-height: 680px;
+  color: #fff;
+  background:
+    linear-gradient(90deg, rgba(17, 20, 18, 0.78), rgba(17, 20, 18, 0.2)),
+    url("https://www.madikwereserve.org/wp-content/uploads/2016/05/pool-4.jpg") center / cover;
+}
+
+.manifestoOverlay {
+  display: flex;
+  width: min(1180px, calc(100% - 32px));
+  min-height: 680px;
+  margin: 0 auto;
+  padding: 96px 0;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.manifestoLine {
+  max-width: 780px;
+  margin: 0 0 30px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(38px, 5.1vw, 72px);
+  line-height: 0.98;
+}
+
+.textLink {
+  display: inline-flex;
+  gap: 16px;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  padding-bottom: 7px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.textLink span {
+  color: var(--gold);
+  font-size: 21px;
 }
 
 .luxuryBand {
   display: grid;
   grid-template-columns: 1fr 0.9fr;
   gap: 56px;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
+  border: 0;
 }
 
 .luxuryBand ul {
@@ -367,8 +438,8 @@ button {
 
 .luxuryBand li {
   min-height: 78px;
-  border-left: 4px solid var(--gold);
-  background: var(--ivory);
+  border-left: 1px solid var(--gold);
+  background: transparent;
   padding: 18px;
   color: var(--ink);
   font-weight: 700;
@@ -439,6 +510,11 @@ button {
 
   .destinationGrid {
     grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .destinationCard {
+    min-height: 460px;
   }
 
   .linkRow {
@@ -473,6 +549,15 @@ button {
   .section,
   .luxuryBand,
   .quoteSection {
+    padding: 58px 0;
+  }
+
+  .manifesto,
+  .manifestoOverlay {
+    min-height: 520px;
+  }
+
+  .manifestoOverlay {
     padding: 58px 0;
   }
 }

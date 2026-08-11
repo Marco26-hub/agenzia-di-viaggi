@@ -3,7 +3,7 @@ const destinations = [
     title: "Costiera Amalfitana privata",
     tag: "Luxury Italia",
     image:
-      "https://perasail.com/_next/image?q=75&url=https%3A%2F%2Fminio.perasail.com%2Fperasail-storage%2Fblog%2F8436d7d3-a45a-40b9-a244-202c10b2172a.jpg&w=3840",
+      "https://www.labellavitamalficharter.com/wp-content/uploads/2024/04/LaBellavita-Charter-Boats-Rentals-AmalfiCoast_Capri_Positano_Boat_DJI_0483.jpg",
     details: "Hotel 5 stelle, yacht day, chef table, transfer privati",
     price: "da 4.900 euro",
   },
@@ -11,7 +11,7 @@ const destinations = [
     title: "Maldives overwater retreat",
     tag: "Honeymoon",
     image:
-      "https://travelsort.com/wp-content/uploads/2017/11/travelsort-2883.jpeg",
+      "https://multimedia.alpitour.it/images/205641/I_883277.webp",
     details: "Villa sull'acqua, spa, seaplane, dining personalizzato",
     price: "da 7.800 euro",
   },
@@ -19,7 +19,7 @@ const destinations = [
     title: "Safari lodge experience",
     tag: "Signature",
     image:
-      "https://south-africa.net/uploads/luxury-retreats-in-south-africa-1-1024x558.jpg",
+      "https://www.madikwereserve.org/wp-content/uploads/2016/05/pool-4.jpg",
     details: "Game drive, lodge boutique, guida privata, estensione mare",
     price: "da 8.600 euro",
   },
@@ -146,6 +146,14 @@ export default function Home() {
           offerte curate, canali di contatto e posizionamento premium. Le API
           complesse arrivano quando sappiamo quali prodotti generano margine.
         </p>
+      </section>
+
+      <section className="manifesto" aria-label="Aurum Private Travel">
+        <div className="manifestoOverlay">
+          <p className="eyebrow">Aurum Private Travel</p>
+          <p className="manifestoLine">Il lusso non e&apos; una categoria. E&apos; il modo in cui ogni dettaglio arriva al posto giusto.</p>
+          <a className="textLink" href="#preventivo">Parla con un travel designer <span aria-hidden="true">→</span></a>
+        </div>
       </section>
 
       <section className="section" id="viaggi">

@@ -16,6 +16,20 @@ export const metadata: Metadata = {
   title: "Aurum Travel | Agenzia viaggi online luxury",
   description:
     "Agenzia viaggi online per itinerari su misura, luxury concierge, pacchetti selezionati e collegamenti con portali travel.",
+  metadataBase: new URL("https://aurum-travel-online.beige-fawn-1352.chatgpt.site"),
+  openGraph: {
+    title: "Aurum Travel | Private journeys, impeccably personal",
+    description: "Viaggi su misura e luxury concierge per chi vuole vivere il mondo in modo personale.",
+    images: ["/og.png"],
+    locale: "it_IT",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Aurum Travel | Private journeys, impeccably personal",
+    description: "Viaggi su misura e luxury concierge.",
+    images: ["/og.png"],
+  },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
