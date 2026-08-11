@@ -176,17 +176,27 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section" id="viaggi">
-        <div className="sectionHeading">
-          <p className="eyebrow">Collezione iniziale</p>
-          <h2>Viaggi ad alto valore</h2>
+      <section className="section journeysSection" id="viaggi">
+        <div className="journeysHeading">
+          <div>
+            <p className="eyebrow">Esperienze firmate Aurum</p>
+            <h2>Tre modi di vivere il mondo, disegnati per voi.</h2>
+          </div>
+          <p>
+            Luoghi iconici, strutture selezionate e accessi privati. Ogni
+            proposta e&apos; un punto di partenza da personalizzare insieme al
+            vostro travel designer.
+          </p>
         </div>
         <div className="destinationGrid">
-          {destinations.map((destination) => (
+          {destinations.map((destination, index) => (
             <article className="destinationCard" key={destination.title}>
               <img src={destination.image} alt={destination.title} />
               <div>
-                <span>{destination.tag}</span>
+                <div className="destinationMeta">
+                  <span>{destination.tag}</span>
+                  <small>0{index + 1}</small>
+                </div>
                 <h3>{destination.title}</h3>
                 <p>{destination.details}</p>
                 <strong>{destination.price}</strong>
