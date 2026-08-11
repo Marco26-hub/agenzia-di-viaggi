@@ -531,7 +531,7 @@ button {
 }
 
 .collectionCopy > span,
-.serviceSignature > p {
+.signatureIntro > p {
   color: #e7c184;
   font-size: 12px;
   font-weight: 800;
@@ -574,27 +574,81 @@ button {
 
 .serviceSignature {
   display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 28px;
+  grid-template-columns: minmax(260px, 0.72fr) minmax(0, 1.5fr);
+  gap: 64px;
   width: min(1180px, 100%);
   margin: 2px auto 0;
-  padding: 32px 0 0;
-  border-top: 1px solid var(--line);
+  padding: 62px;
+  background: #17211f;
+  color: #fff;
 }
 
-.serviceSignature > p {
-  margin: 5px 0 0;
-  color: var(--wine);
+.signatureIntro > p {
+  margin: 0 0 18px;
+  color: var(--gold);
 }
 
-.serviceSignature ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px 30px;
+.signatureIntro h3 {
+  margin-bottom: 22px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(30px, 3vw, 43px);
+  font-weight: 400;
+  line-height: 1.02;
+}
+
+.signatureIntro > span {
+  display: block;
+  max-width: 330px;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.serviceSignature ol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: 0;
   padding: 0;
   list-style: none;
-  font-weight: 700;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.serviceSignature li {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 14px;
+  min-height: 132px;
+  padding: 24px 22px 22px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.serviceSignature li:nth-child(odd) {
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.serviceSignature li:nth-child(even) {
+  padding-left: 22px;
+}
+
+.serviceSignature small {
+  color: var(--gold);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 14px;
+}
+
+.serviceSignature strong {
+  display: block;
+  margin-bottom: 8px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.serviceSignature li p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 13px;
+  line-height: 1.5;
 }
 
 .system {
@@ -695,7 +749,8 @@ button {
 
   .serviceSignature {
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 36px;
+    padding: 40px 32px;
   }
 
   .linkRow {
@@ -739,5 +794,17 @@ button {
 
   .manifestoOverlay {
     padding: 58px 0;
+  }
+
+  .serviceSignature ol {
+    grid-template-columns: 1fr;
+  }
+
+  .serviceSignature li:nth-child(odd) {
+    border-right: 0;
+  }
+
+  .serviceSignature li:nth-child(even) {
+    padding-left: 0;
   }
 }

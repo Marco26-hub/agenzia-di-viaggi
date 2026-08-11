@@ -34,12 +34,12 @@ const operatingLinks = [
 ];
 
 const luxuryServices = [
-  "Consulente dedicato",
-  "Itinerario su misura",
-  "Hotel benefit e upgrade",
-  "Assistenza durante il viaggio",
-  "Ville, yacht, safari e retreat",
-  "Profilo cliente e preferenze",
+  { title: "Consulente dedicato", detail: "Un unico referente, dall'idea al rientro." },
+  { title: "Itinerario su misura", detail: "Tempi, luoghi ed esperienze costruiti intorno a voi." },
+  { title: "Hotel benefit e upgrade", detail: "Accoglienze speciali e vantaggi presso partner selezionati." },
+  { title: "Assistenza durante il viaggio", detail: "Supporto discreto e continuo, ovunque vi troviate." },
+  { title: "Ville, yacht, safari e retreat", detail: "Accesso a proprieta' ed esperienze fuori catalogo." },
+  { title: "Profilo cliente e preferenze", detail: "Ogni viaggio conosce gia' cio' che amate." },
 ];
 
 const privateCollections = [
@@ -236,10 +236,22 @@ export default function Home() {
         </div>
 
         <div className="serviceSignature">
-          <p>La firma Aurum</p>
-          <ul>
-            {luxuryServices.map((service) => <li key={service}>{service}</li>)}
-          </ul>
+          <div className="signatureIntro">
+            <p>La firma Aurum</p>
+            <h3>Un servizio che si riconosce nei dettagli.</h3>
+            <span>Il nostro standard private travel, prima, durante e dopo ogni partenza.</span>
+          </div>
+          <ol>
+            {luxuryServices.map((service, index) => (
+              <li key={service.title}>
+                <small>0{index + 1}</small>
+                <div>
+                  <strong>{service.title}</strong>
+                  <p>{service.detail}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 
